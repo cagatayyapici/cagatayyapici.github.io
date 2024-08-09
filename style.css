@@ -1,43 +1,40 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
+/* Sekme düğmelerinin stilini ayarla */
+.tab {
+    overflow: hidden;
+    border-bottom: 1px solid #ccc;
 }
 
-header {
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
-    text-align: center;
+/* Sekme düğmeleri */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
 }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
+/* Sekme düğmeleri üzerine gelince arka plan rengini değiştir */
+.tab button:hover {
+    background-color: #ddd;
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 10px;
+/* Aktif sekme düğmesi */
+.tab button.active {
+    background-color: #ccc;
 }
 
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-section {
+/* Sekme içerik alanı */
+.tabcontent {
+    display: none;
     padding: 20px;
-    text-align: center;
+    border-top: none;
 }
 
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+/* Sekme içeriğindeki görüntülerin stili */
+.tabcontent img {
+    max-width: 100%;
+    height: auto;
 }

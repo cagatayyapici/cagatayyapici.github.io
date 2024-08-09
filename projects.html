@@ -21,16 +21,30 @@
     <section>
         <h2>My Projects</h2>
 
-        <div class="project">
-            <h3>Project Title</h3>
-            <img src="images/project-screenshot.png" alt="Project Screenshot">
-            <p>Description of the project goes here. Explain what the project is about, the technologies used, and your role in the project.</p>
+        <!-- Sekmeler -->
+        <div class="tab">
+            <button class="tablinks" onclick="openProject(event, 'Project1')" id="defaultOpen">Project 1</button>
+            <button class="tablinks" onclick="openProject(event, 'Project2')">Project 2</button>
+            <button class="tablinks" onclick="openProject(event, 'Project3')">Project 3</button>
         </div>
 
-        <div class="project">
-            <h3>Another Project</h3>
-            <img src="images/project-screenshot.png" alt="Project Screenshot">
-            <p>Description of another project goes here. Highlight key features and challenges you faced.</p>
+        <!-- Sekme İçerikleri -->
+        <div id="Project1" class="tabcontent">
+            <h3>Project 1</h3>
+            <img src="images/project1-screenshot.png" alt="Project 1 Screenshot">
+            <p>Project 1'in açıklaması burada yer alacak. Bu projede kullanılan teknolojiler, yapılan işlemler ve diğer detaylar açıklanabilir.</p>
+        </div>
+
+        <div id="Project2" class="tabcontent">
+            <h3>Project 2</h3>
+            <img src="images/project2-screenshot.png" alt="Project 2 Screenshot">
+            <p>Project 2'nin açıklaması burada yer alacak. Bu projede kullanılan teknolojiler, yapılan işlemler ve diğer detaylar açıklanabilir.</p>
+        </div>
+
+        <div id="Project3" class="tabcontent">
+            <h3>Project 3</h3>
+            <img src="images/project3-screenshot.png" alt="Project 3 Screenshot">
+            <p>Project 3'ün açıklaması burada yer alacak. Bu projede kullanılan teknolojiler, yapılan işlemler ve diğer detaylar açıklanabilir.</p>
         </div>
 
     </section>
@@ -38,5 +52,31 @@
     <footer>
         <p>&copy; 2024 Çağatay Yapıcı</p>
     </footer>
+
+    <!-- JavaScript kodları -->
+    <script>
+        function openProject(evt, projectName) {
+            // Tüm tabcontent elementlerini gizle
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            // Tüm tablinks elementlerinin aktif sınıfını kaldır
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+
+            // Geçerli sekmeyi göster ve aktif sınıfını ekle
+            document.getElementById(projectName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        // Varsayılan olarak ilk sekmeyi aç
+        document.getElementById("defaultOpen").click();
+    </script>
+
 </body>
 </html>
