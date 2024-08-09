@@ -38,3 +38,11 @@
     max-width: 100%;
     height: auto;
 }
+
+/* Sekme içeriğindeki video elementlerinin stili */
+.tabcontent video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+}
