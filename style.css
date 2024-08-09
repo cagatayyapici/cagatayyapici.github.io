@@ -1,48 +1,130 @@
-/* Sekme düğmelerinin stilini ayarla */
+/* Genel Stil */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Stili */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active {
+    color: #ff6b6b;
+}
+
+/* Ana İçerik Stili */
+main {
+    margin-top: 30px;
+}
+
+.projects-section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    color: #333;
+}
+
+/* Sekmelerin Stili */
 .tab {
-    overflow: hidden;
-    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
 }
 
-/* Sekme düğmeleri */
 .tab button {
-    background-color: inherit;
-    float: left;
-    border: none;
-    outline: none;
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    padding: 15px 30px;
     cursor: pointer;
-    padding: 14px 16px;
-    transition: 0.3s;
-    font-size: 17px;
+    font-size: 1rem;
+    transition: background-color 0.3s, color 0.3s;
 }
 
-/* Sekme düğmeleri üzerine gelince arka plan rengini değiştir */
 .tab button:hover {
-    background-color: #ddd;
+    background-color: #e0e0e0;
 }
 
-/* Aktif sekme düğmesi */
 .tab button.active {
-    background-color: #ccc;
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
 }
 
-/* Sekme içerik alanı */
+/* Sekme İçeriklerinin Stili */
 .tabcontent {
     display: none;
     padding: 20px;
-    border-top: none;
+    background-color: #fff;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
 }
 
-/* Sekme içeriğindeki görüntülerin stili */
-.tabcontent img {
-    max-width: 100%;
-    height: auto;
+.tabcontent h3 {
+    font-size: 1.75rem;
+    margin-top: 0;
 }
 
-/* Sekme içeriğindeki video elementlerinin stili */
 .tabcontent video {
-    max-width: 100%;
-    height: auto;
+    width: 100%;
+    max-width: 800px;
     display: block;
-    margin: 0 auto 20px;
+    margin: 20px auto;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.tabcontent p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+/* Footer Stili */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
 }
