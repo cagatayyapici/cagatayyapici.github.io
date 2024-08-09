@@ -4,28 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Çağatay Yapıcı - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Çağatay Yapıcı</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1>Çağatay Yapıcı</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <section>
-        <h2>Welcome to My Portfolio</h2>
-        <p>I am a Unity Game Developer with experience in various game development projects.</p>
-        <p>Explore my work and learn more about my skills and projects.</p>
-    </section>
+    <main class="container">
+        <section class="hero">
+            <h2>Welcome to My Portfolio</h2>
+            <p>I am a Unity Game Developer with a passion for creating immersive and interactive experiences. Explore my projects and get to know more about me.</p>
+            <a href="projects.html" class="btn">View My Work</a>
+        </section>
+    </main>
 
     <footer>
-        <p>&copy; 2024 Çağatay Yapıcı</p>
+        <div class="container">
+            <p>&copy; 2024 Çağatay Yapıcı</p>
+        </div>
     </footer>
 </body>
 </html>
