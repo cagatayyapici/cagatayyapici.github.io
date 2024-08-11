@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <div class="container">
@@ -27,7 +29,8 @@
 
             <div class="tab-container">
                 <div class="tab">
-                    <button class="tablinks" onclick="openProject(event, 'Project1')" id="defaultOpen">Shuffle Master</button>
+                    <button class="tablinks" onclick="openProject(event, 'Project1')" id="defaultOpen">Shuffle
+                        Master</button>
                     <button class="tablinks" onclick="openProject(event, 'Project2')">Stick Match</button>
                     <button class="tablinks" onclick="openProject(event, 'Project3')">Rocket Busters</button>
                     <button class="tablinks" onclick="openProject(event, 'Project4')">Office Fever</button>
@@ -44,12 +47,19 @@
 
             <div id="Project1" class="tabcontent">
                 <h3>Shuffle Master</h3>
-                <video width="50%" height="auto" controls>
-                    <source src="videos/Shuffle Master.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-                <p>"Shuffle Master" is a game developed with Rollic that underwent a soft launch and was tested through 4 iterations. During the development of this game, I also monitored the status of other projects within the company.</p>
+                <div class="video-container">
+                    <span class="prev" onclick="changeProject(-1)">&#10094;</span>
+                    <video width="50%" height="auto" controls>
+                        <source src="videos/Shuffle Master.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <span class="next" onclick="changeProject(1)">&#10095;</span>
+                </div>
+                <p>"Shuffle Master" is a game developed with Rollic that underwent a soft launch and was tested
+                    through 4 iterations. During the development of this game, I also monitored the status of other
+                    projects within the company.</p>
             </div>
+
 
             <div id="Project2" class="tabcontent">
                 <h3>Stick Match</h3>
@@ -57,7 +67,8 @@
                     <source src="videos/Stick Match.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
-                <p>This game published by Virtual Projects. The game went through three different iterations. All mechanics, including animations, were done by me.</p>
+                <p>This game published by Virtual Projects. The game went through three different iterations. All
+                    mechanics, including animations, were done by me.</p>
             </div>
 
             <div id="Project3" class="tabcontent">
@@ -75,7 +86,10 @@
                     <source src="videos/Rocket Busters.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
-                <p>This game was made for Rollic and had a soft launch, achieving 50 million downloads. During its development, I was also working on the development of "Shuffle Master" and "Theme Park Rush." I was responsible for overseeing the development process of this game and assisting with any issues that arose.</p>
+                <p>This game was made for Rollic and had a soft launch, achieving 50 million downloads. During its
+                    development, I was also working on the development of "Shuffle Master" and "Theme Park Rush." I was
+                    responsible for overseeing the development process of this game and assisting with any issues that
+                    arose.</p>
             </div>
 
             <div id="Project5" class="tabcontent">
@@ -84,12 +98,15 @@
                     <source src="videos/Rocket Busters.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
-                <p>The research and development of the game were done by me. During the research phase, animation systems, basketball rules, and main menu mechanics were studied, and their algorithms and animation systems were created.
+                <p>The research and development of the game were done by me. During the research phase, animation
+                    systems, basketball rules, and main menu mechanics were studied, and their algorithms and animation
+                    systems were created.
 
                     In the development phase, the game was polished.
-                    
-                    I left the project during the addition of the training section, one of the later iterations of the game, due to my military service.
-                    
+
+                    I left the project during the addition of the training section, one of the later iterations of the
+                    game, due to my military service.
+
                     This game was published by Virtual Projects.</p>
             </div>
 
@@ -108,7 +125,10 @@
                     <source src="videos/Rocket Busters.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
-                <p>"Theme Park Rush" is an idle game developed with Rollic. It underwent a soft launch. The game was created by a team of three developers and was completed in about three weeks. I was responsible for the main mechanics of the game and managing the other two developers. Additionally, our team created the company's idle game template, which helped shorten the development process for other games.</p>
+                <p>"Theme Park Rush" is an idle game developed with Rollic. It underwent a soft launch. The game was
+                    created by a team of three developers and was completed in about three weeks. I was responsible for
+                    the main mechanics of the game and managing the other two developers. Additionally, our team created
+                    the company's idle game template, which helped shorten the development process for other games.</p>
             </div>
 
             <div id="Project8" class="tabcontent">
@@ -117,7 +137,8 @@
                     <source src="videos/Rocket Busters.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
-                <p>I joined the game for the third iteration. My task was to allow the player to make free moves on the tactics board and ensure it worked in the 3D gameplay.
+                <p>I joined the game for the third iteration. My task was to allow the player to make free moves on the
+                    tactics board and ensure it worked in the 3D gameplay.
 
                     The game was made for Rollic and underwent a soft lunch.</p>
             </div>
@@ -128,7 +149,8 @@
                     <source src="videos/Rocket Busters.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
-                <p>This game was made for Rollic. The game used Obi Softbody, and various performance issues were resolved by editing Obi.</p>
+                <p>This game was made for Rollic. The game used Obi Softbody, and various performance issues were
+                    resolved by editing Obi.</p>
             </div>
 
             <div id="Project10" class="tabcontent">
@@ -137,7 +159,8 @@
                     <source src="videos/Rocket Busters.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
-                <p>It is published by Virtual Projects. Research and implementation of mechanics for the jelly form were conducted.</p>
+                <p>It is published by Virtual Projects. Research and implementation of mechanics for the jelly form were
+                    conducted.</p>
             </div>
 
             <div id="Project11" class="tabcontent">
@@ -146,7 +169,8 @@
                     <source src="videos/Rocket Busters.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
-                <p>Due to the potential need for AI in large games in the future, I learned this technology and developed AIs that can park cars in empty spaces in a parking lot.</p>
+                <p>Due to the potential need for AI in large games in the future, I learned this technology and
+                    developed AIs that can park cars in empty spaces in a parking lot.</p>
             </div>
 
             <div id="Project12" class="tabcontent">
@@ -182,6 +206,18 @@
         }
 
         document.getElementById("defaultOpen").click();
+
+        function changeProject(direction) {
+            var tabs = document.getElementsByClassName("tablinks");
+            var activeTab = document.querySelector(".tablinks.active");
+            var newIndex = Array.prototype.indexOf.call(tabs, activeTab) + direction;
+
+            if (newIndex >= tabs.length) newIndex = 0;
+            if (newIndex < 0) newIndex = tabs.length - 1;
+
+            tabs[newIndex].click();
+        }
     </script>
 </body>
+
 </html>
