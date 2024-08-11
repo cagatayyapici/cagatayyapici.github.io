@@ -109,7 +109,7 @@ header nav ul li a.active {
 }
 
 .tabcontent video {
-    width: 10%;
+    width: 100%;
     max-width: 400px; /* Videonun maksimum genişliği */
     display: block;
     margin: 20px auto;
@@ -126,7 +126,7 @@ header nav ul li a.active {
 }
 
 .video-container video {
-    width: 50%;
+    width: 30%;
     max-width: 800px;
     border-radius: 5px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
