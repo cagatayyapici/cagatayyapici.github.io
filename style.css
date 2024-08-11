@@ -116,7 +116,7 @@ header nav ul li a.active {
 }
 
 .video-container video {
-    width: 70%;
+    width: 50%;
     max-width: 800px;
     border-radius: 5px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
