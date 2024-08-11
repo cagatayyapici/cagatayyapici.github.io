@@ -156,7 +156,7 @@ header nav ul li a.active {
 
 .tabcontent video {
     width: 100%;
-    max-width: 800px;
+    max-width: 600px;
     display: block;
     margin: 20px auto;
     border-radius: 5px;
