@@ -47,10 +47,15 @@
 
             <div id="Project1" class="tabcontent">
                 <div class="project-content">
+                    <!-- <div class="video-content"> -->
+                    <!-- <span class="prev" onclick="changeProject(-1)">&#10094;</span> -->
                     <video width="100%" controls>
                         <source src="videos/Shuffle Master.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
+                    
+                    <!-- <span class="next" onclick="changeProject(1)">&#10095;</span> -->
+                <!-- </div> -->
                     <div class="project-description">
                         <h3>Shuffle Master</h3>
                         <p>"Shuffle Master" is a game developed with Rollic that underwent a soft launch and was tested through 4 iterations. During the development of this game, I also monitored the status of other projects within the company.</p>
@@ -226,6 +231,17 @@
         }
 
         document.getElementById("defaultOpen").click();
+
+        function changeProject(direction) {
+            var tabs = document.getElementsByClassName("tablinks");
+            var activeTab = document.querySelector(".tablinks.active");
+            var newIndex = Array.prototype.indexOf.call(tabs, activeTab) + direction;
+
+            if (newIndex >= tabs.length) newIndex = 0;
+            if (newIndex < 0) newIndex = tabs.length - 1;
+
+            tabs[newIndex].click();
+        }
     </script>
 </body>
 

@@ -103,11 +103,32 @@ header nav ul li a.active {
 }
 
 .project-content video {
-    width: 60%;
-    max-width: 600px;
+    width: 40%;
+    max-width: 400px;
     border-radius: 5px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
+
+/* .project-content .prev,
+.project-content .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 2rem;
+    padding: 10px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.project-content .prev {
+    left: 00px;
+}
+
+.project-content.next {
+    right: 400px;
+} */
 
 .project-description {
     flex: 1;
