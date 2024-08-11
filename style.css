@@ -1,4 +1,3 @@
-/* Genel Stil */
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -13,7 +12,6 @@ body {
     padding: 0 20px;
 }
 
-/* Header Stili */
 header {
     background-color: #333;
     color: #fff;
@@ -49,7 +47,6 @@ header nav ul li a.active {
     color: #ff6b6b;
 }
 
-/* Projects Section */
 .projects-section {
     padding: 40px 20px;
     background-color: #fff;
@@ -62,7 +59,6 @@ header nav ul li a.active {
     margin-bottom: 20px;
 }
 
-/* Sekmelerin Stili */
 .tab-container {
     overflow-x: auto;
     white-space: nowrap;
@@ -94,66 +90,49 @@ header nav ul li a.active {
     border: none;
 }
 
-/* Sekme İçeriklerinin Stili */
 .tabcontent {
     display: none;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
+    flex-direction: row;
+    align-items: flex-start;
 }
 
-.tabcontent h3 {
+.project-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.project-content video {
+    width: 60%;
+    max-width: 600px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.project-description {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.project-description h3 {
     font-size: 1.75rem;
     margin-top: 0;
 }
 
-.tabcontent video {
-    width: 100%;
-    max-width: 400px; /* Videonun maksimum genişliği */
-    display: block;
-    margin: 20px auto;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    height: auto; /* Videonun orantısını korur */
+.project-description p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
 }
 
-.video-container {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
 }
 
-.video-container video {
-    width: 30%;
-    max-width: 800px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-}
-
-.video-container .prev,
-.video-container .next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    font-size: 2rem;
-    padding: 10px;
-    cursor: pointer;
-    border-radius: 50%;
-}
-
-.video-container .prev {
-    left: 10px;
-}
-
-.video-container .next {
-    right: 10px;
-}
-
-.video-container .prev:hover,
-.video-container .next:hover {
-    background-color: rgba(0, 0, 0, 0.7);
+footer p {
+    margin: 0;
+    font-size: 0.875rem;
 }
