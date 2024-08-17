@@ -6,6 +6,122 @@
     <title>Çağatay Yapıcı - Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+        }
+
+        header h1 {
+            margin: 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        nav ul li a.active, nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+            background-color: #eaeaea;
+            margin-bottom: 40px;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .about-section, .projects-section, .cv-section {
+            margin-bottom: 40px;
+        }
+
+        .projects-section h2 {
+            margin-bottom: 20px;
+        }
+
+        .project {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .project video {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .project-description {
+            margin-top: 15px;
+        }
+
+        .project-description h3 {
+            margin: 0;
+            color: #333;
+        }
+
+        .project-description p {
+            color: #555;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 40px;
+        }
+
+        .pdf-container {
+            text-align: center;
+        }
+
+        .pdf-container iframe {
+            width: 100%;
+            height: 600px;
+            border: none;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -13,21 +129,178 @@
             <h1>Çağatay Yapıcı</h1>
             <nav>
                 <ul>
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="cv.html">CV</a></li>
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#cv">CV</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main class="container">
-        <section class="hero">
+        <!-- Home Section -->
+        <section id="home" class="hero">
             <h2>Welcome to My Portfolio</h2>
             <p>I am a Unity Game Developer with a passion for creating immersive and interactive experiences. Explore my projects and get to know more about me.</p>
-            <a href="projects.html" class="btn">View My Work</a>
+            <a href="#projects" class="btn">View My Work</a>
         </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <h2>About Me</h2>
+            <p>Hi, I'm Çağatay Yapıcı, a Unity Game Developer with extensive experience in creating engaging and interactive games. I have a strong background in C# programming, 3D modeling, and game mechanics. My passion for game development drives me to continually learn and improve my skills.</p>
+            <p>I have worked on a variety of projects, from small indie games to larger, more complex projects. My goal is to create games that are not only fun to play but also leave a lasting impression on the players.</p>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section">
+            <h2>My Projects</h2>
+            <div class="project-content">
+                <video controls>
+                    <source src="videos/Shuffle Master.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="project-description">
+                    <h3>Shuffle Master</h3>
+                    <p>"Shuffle Master" is a game developed with Rollic that underwent a soft launch and was tested through 4 iterations. During the development of this game, I also monitored the status of other projects within the company.</p>
+                </div>
+            </div>
+
+            <div class="project-content">
+                <video controls>
+                    <source src="videos/Stick Match.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="project-description">
+                    <h3>Stick Match</h3>
+                    <p>Stick Match is a challenging puzzle game where you must solve puzzles by removing and placing matchsticks according to the given rules. The game offers multiple levels of difficulty to keep players engaged.</p>
+                </div>
+            </div>
+
+            <div class="project-content">
+                <video controls>
+                    <source src="videos/Rocket Busters.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="project-description">
+                    <h3>Rocket Busters</h3>
+                    <p>Rocket Busters is an action-packed arcade game where you control a spaceship and must navigate through a series of challenging obstacles while avoiding enemies and collecting power-ups.</p>
+                </div>
+            </div>
+
+            <div class="project-content">
+                <video controls>
+                    <source src="videos/Office Fever.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="project-description">
+                    <h3>Office Fever</h3>
+                    <p>Office Fever is a time management game that simulates the hectic environment of a busy office. Players must complete tasks efficiently and manage their time to succeed in the game.</p>
+                </div>
+            </div>
+
+            <div class="project-content">
+                <video controls>
+                    <source src="videos/Basketball Superstar.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="project-description">
+                    <h3>Basketball Superstar</h3>
+                    <p>"Basketball Superstar" is a sports game focused on quick matches and team management. I developed the game mechanics and integrated various animations to create a smooth user experience.</p>
+                </div>
+            </div>
+
+            <div class="project-content">
+                <video controls>
+                    <source src="videos/Drift Shift.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="project-description">
+                    <h3>Drift Shift</h3>
+                    <p>This racing game, "Drift Shift", was developed to challenge players with sharp turns and high-speed drifting. I was responsible for the physics implementation and vehicle dynamics.</p>
+                </div>
+            </div>
+
+            <div class="project-content">
+                <video controls>
+                    <source src="videos/Theme Park Rush.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="project-description">
+                    <h3>Theme Park Rush</h3>
+                    <p>"Theme Park Rush" is a simulation game where players build and manage their own theme park. I managed the game's economy system and level design.</p>
+                </div>
+            </div>
+
+            <div class="project-content">
+                <video controls>
+                    <source src="videos/OK Coach.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="project-description">
+                    <h3>OK Coach</h3>
+                    <p>"OK Coach" is a strategy sports game where players take the role of a coach to lead their team to victory. I developed AI behavior for the team members and handled game balancing.</p>
+                </div>
+            </div>
+
+            <div class="project-content">
+                <video controls>
+                    <source src="videos/Cake Check.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="project-description">
+                    <h3>Cake Check</h3>
+                    <p>"Cake Check" is a casual game where players must quickly check and organize cakes. I was involved in the entire development process, focusing on the game's user interface and user experience.</p>
+                </div>
+            </div>
+
+            <div class="project-content">
+                <video controls>
+                    <source src="videos/Snake Drop.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="project-description">
+                    <h3>Snake Drop</h3>
+                    <p>"Snake Drop" is a challenging puzzle game where players guide a snake through various obstacles. I was responsible for level design and the development of the snake's movement mechanics.</p>
+                </div>
+            </div>
+
+            <div class="project-content">
+                <video controls>
+                    <source src="videos/Unity ML Car.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="project-description">
+                    <h3>Unity ML Car</h3>
+                    <p>This project involves a machine learning model in Unity where a car learns to navigate a track. I implemented the reinforcement learning algorithm and tuned the model parameters for optimal performance.</p>
+                </div>
+            </div>
+
+            <div class="project-content">
+                <video width="100%" controls>
+                    <source src="videos/Unity ML Walking.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="project-description">
+                    <h3>Unity ML Walking</h3>
+                    <p>This Unity project demonstrates a walking model trained using machine learning techniques. I handled the implementation of the training environment and model optimization.</p>
+                </div>
+            </div>
+
+            <!-- Daha fazla proje ekleyebilirsiniz -->
+        </section>
+
+        <!-- CV Section -->
+<!-- CV Section -->
+<section id="cv" class="cv-section">
+    <h2>My CV</h2>
+    <div class="pdf-container">
+        <iframe src="pdf/cv.pdf" width="100%" height="2000px"> <!-- Daha uzun yükseklik -->
+            This browser does not support PDFs. Please download the PDF to view it: <a href="path_to_your_cv.pdf">Download PDF</a>.
+        </iframe>
+    </div>
+</section>
     </main>
 
     <footer>
